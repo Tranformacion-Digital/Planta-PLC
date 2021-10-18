@@ -1,0 +1,30 @@
+/*
+* 
+* Do not remove this: <!-- <RGRAPH_REMOVE> --> <!-- </RGRAPH_REMOVE> -->
+* 
+*/
+
+body {
+    font-family: Arial;
+}
+
+pre.code {
+    padding: 5px;
+    background-color: #eee;
+    margin-top: 0;
+    margin-bottom: 40px;
+    overflow-x: auto;
+    padding: 15px;
+}
+
+pre.code span {
+    color: green;
+}
+
+pre.code span span {
+    color: red;
+}
+
+ul.bullets li{
+    list-style-image: url('/images/tick2.png');
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="demos.css" type="text/css" media="screen" />
+    
+    
+    <meta name="description" content="An adjustable line chart using one-touch adjusting" />
+    
+    <script src="../libraries/RGraph.common.core.js" ></script>
+    <script src="../libraries/RGraph.common.dynamic.js" ></script>
+    <script src="../libraries/RGraph.line.js" ></script>
+    <script src="demos.js" ></script>
+
+    <title>RGraph demo: An adjustable Line chart using one-touch adjusting</title>
+    
+    
+    <meta name="robots" content="noindex, nofollow" />
+
+</head>
+<body>
+
+    
+    <h1>An adjustable Line chart using one-touch adjusting</h1>
+
+    <p>
+        Previously this involved a fair amount of code - though as of version 6.03 it's a case of
+        specifying a single option: <code>adjustableXonly</code> (and optionally increasing the
+        hotspot size with the <code>tooltipsHotspotSize</code> option)
+    </p>
+
+    <canvas id="cvs" width="650" height="250">[No canvas support]</canvas>
+
+    <script>
+        // The data for the chart
+        data = [11,13,14,15,17,19,20,19,17,15,14,14,13];
+
+        // Create and configure the chart
+        line = new RGraph.Line({
+            id: 'cvs',
+            data: data,
+            options: {
+                yaxisScaleMax: 20,
+                marginInner: 10,
+                tickmarksStyle: 'circle',
+                xaxisLabels: ['Fred', 'John', 'Kev', 'Lou', 'Pete','Mark','Neil','Indra','Lewis','Bob'],
+                xaxis: false,
+                yaxis: false,
+                yaxisTickmarksCount: 5,
+                tickmarksStyle: 'filledcircle',
+                backgroundGridVlines: false,
+                backgroundGridBorder: false,
+                labelsAbove: true,
+                labelsAboveBorder: false,
+                labelsAboveDecimals: 1,
+                labelsAboveSize: 9,
+                labelsAboveBold: true,
+                labelsAboveOffsety: -10,
+                shadow: false,
+                
+                adjustable: true,
+                adjustableXonly: true,
+                tooltipsHotspotSize: 20
+            }
+        }).draw();
+    </script>
+
+
+
+    <p></p>
+
+    This goes in the documents header:
+    <pre class="code">
+&lt;script src="RGraph.common.core.js"&gt;&lt;/script&gt;
+&lt;script src="RGraph.line.js"&gt;&lt;/script&gt;
+</pre>
+    
+    Put this where you want the chart to show up:
+    <pre class="code">
+&lt;canvas id="cvs" width="650" height="250"&gt;
+    [No canvas support]
+&lt;/canvas&gt;
+</pre>
+
+    This is the code that generates the chart:
+    <div id="dynamic-source-code"></div>
+    <script>showSource()</script>
+
+</body>
+</html>
