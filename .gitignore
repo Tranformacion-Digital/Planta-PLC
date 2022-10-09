@@ -1,5 +1,6 @@
 node_modules
 
+#PLC Codesys
 PLC/ProcesoBatch-AllUsers.opt
 PLC/ProcesoBatch-charl-KRLOZ-ASUS.opt
 PLC/ProcesoBatch.Device.Application.d7c76a25-ea10-4293-b6ec-735de405e92a.bootinfo
@@ -7,3 +8,4 @@ PLC/ProcesoBatch.Device.Application.d7c76a25-ea10-4293-b6ec-735de405e92a.bootinf
 PLC/ProcesoBatch.Device.Application.d7c76a25-ea10-4293-b6ec-735de405e92a.compileinfo
 PLC/ProcesoBatch.Device.Application.xml
 PLC/ProcesoBatch.project.~u
+PLC/ProcesoBatch_project.precompilecache
